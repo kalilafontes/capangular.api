@@ -1,0 +1,12 @@
+a:link,
+a {
+  text-decoration: none !important;
+}
+.nav-wrapper {
+  background: #1f1f1f;
+}
+
+.waves-effect.waves-light,
+i.waves-effect.waves-light.waves-input-wrapper {
+  background-color: #1f1f1f !important;
+}

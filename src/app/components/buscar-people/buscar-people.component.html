@@ -1,0 +1,17 @@
+<div style="width: 400px; margin: 0 auto; margin-top: 80px;">
+  <form  #form = "ngForm" (ngSubmit) = "onSubmit(form)" novalidate ngForm>
+    <label for="nome">Nome</label><br>
+  
+    <select class="browser-default" #pessoaSelecionada = "ngModel" ngModel name="url">
+      <option required *ngFor="let people of peopleList.results" [value]="people.url" > {{people.name}}</option>
+    </select> <br>
+  
+    <span style="color:red;" *ngIf=error>{{errorMessage}}</span><br> 
+  
+    <button><input type="submit" class="waves-effect waves-light" value="Obter dados"></button>
+  </form>
+  
+  <span  *ngIf=pessoaSelecionada>Nome: {{people.name}}</span><br> 
+  <span *ngIf=pessoaSelecionada>Altura: {{people.height}} cm</span><br> 
+  
+</div>

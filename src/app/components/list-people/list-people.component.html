@@ -1,0 +1,22 @@
+<div style="width: 400px; margin: 0 auto; margin-top: 80px;">
+  <table>
+    <tr>
+      <td>
+        Nome
+      </td> 
+      <td>
+        Altura
+      </td>       
+    </tr>  
+    <tr *ngFor = "let people of peopleList.results">
+      <td>
+        {{people.name}}
+      </td>  
+      <td>
+        {{people.height}}
+      </td>     
+
+    </tr>  
+
+  </table>
+</div>
